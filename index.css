@@ -35,3 +35,18 @@ body {
     line-height: 1.5;
     font-family: 'Antic Slab', serif;
 }
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 4rem;
+}
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+}
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
