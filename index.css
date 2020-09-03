@@ -47,6 +47,7 @@ h2 {
 h3 {
     font-family: 'Syne', sans-serif;
     font-size: 2rem;
+    text-align: center;
 }
 a {
     text-decoration: none;
@@ -66,6 +67,7 @@ header {
 .name {
     margin: 0 1%;
     padding: 1% 1% 0 1%;
+    font-size: 3.3rem;
 }
 nav {
     display: flex;
@@ -82,8 +84,38 @@ nav a {
 /* Main image and text */
 .aboutMe {
     display: flex;
-    padding: 1%;
+    margin: 1%;
+    align-items: flex-end;
 }
 .logo {
     flex-shrink: 0;
+    width: 40vw;
+    margin-right: 5%;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.textContainer p {
+    margin: 3% 0 0 0;
+}
+
+
+/* List of projects */
+.listOfProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.listOfProjects div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin:2% 1%;
 }
