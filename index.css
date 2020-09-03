@@ -48,6 +48,7 @@ h3 {
     font-family: 'Syne', sans-serif;
     font-size: 2rem;
     text-align: center;
+    text-decoration: underline;
 }
 a {
     text-decoration: none;
@@ -99,7 +100,7 @@ nav a {
 .textContainer {
     display: flex;
     flex-direction: column;
-    height: auto;
+    justify-content: space-between;
 }
 .textContainer p {
     margin: 3% 0 0 0;
@@ -118,4 +119,15 @@ nav a {
     flex-direction: column;
     width: 20%;
     margin:2% 1%;
+}
+
+
+/* footer */
+footer {
+    background-color: #DCDCDC;
+    height: 15%;
+    text-align: center;
+}
+.footerText {
+    padding: 3%;
 }
