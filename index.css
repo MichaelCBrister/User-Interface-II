@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Syne:wght@500&display=swap');
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    font-size: 100%;  
+    font: inherit;  
+    vertical-align: baseline;  
+}
+
+
+/* General Styles */
+* {
+    box-sizing:border-box;
+    max-width:100%;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: 'Antic Slab', serif;
+    position: relative;
+    min-height: 100vh;
+}
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 4rem;
+    color: #191970;
+}
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+}
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #696969;
+    border: 2px solid #191970;
+    padding: 0 1%;
+}
+
+
+/* Header */
+header {
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    margin: 0 1%;
+    padding: 1% 1% 0 1%;
+    font-size: 3.3rem;
+}
+nav {
+    display: flex;
+    margin: 0 2% 2% 2%;
+    padding: 0 2%;
+}
+nav a {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    padding:0 1%;
+}
+
+
+/* Main image and text */
+.aboutMe {
+    display: flex;
+    margin: 1%;
+    align-items: flex-end;
+}
+.logo {
+    flex-shrink: 0;
+    width: 40vw;
+    margin-right: 5%;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.textContainer p {
+    margin: 3% 0 0 0;
+}
+
+
+/* List of projects */
+.listOfProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.listOfProjects div {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin:2% 1%;
+}
+
+
+/* footer */
+footer {
+    bottom: 0;
+    background-color: #DCDCDC;
+    height: 15%;
+    text-align: center;
+}
+.footerText {
+    padding: 3%;
+}
+/* Day 2*/
+/* 800px Width*/
+@media (max-width: 800px) {
+    header {
+        align-items: center;
+        background-color: white;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 2%;
+    }
+    nav a {
+        width: 25vw;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 86vw;
+        margin: 0 12vw;
+    }
+    .textContainer {
+        align-items: center;
+        width: 80vw;
+    }
+    a {
+        white-space: nowrap;
+    }
+    .listOfProjects{
+        justify-content: space-evenly;
+    }
+    .listOfProjects div {
+        width: 40vw;
+    }
+}
+
+/* 500px width */
+@media (max-width: 500px) {
+    .listOfProjects div {
+        width: 80vw;
+    }
+}
