@@ -174,4 +174,11 @@ footer {
     .listOfProjects div {
         width: 40vw;
     }
-} 
+}
+
+/* 500px width */
+@media (max-width: 500px) {
+    .listOfProjects div {
+        width: 80vw;
+    }
+}
