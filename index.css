@@ -34,6 +34,8 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     font-family: 'Antic Slab', serif;
+    position: relative;
+    min-height: 100vh;
 }
 h1 {
     font-family: 'Syne', sans-serif;
@@ -79,6 +81,7 @@ nav a {
     display: flex;
     width: 10%;
     justify-content: center;
+    padding:0 1%;
 }
 
 
@@ -124,6 +127,7 @@ nav a {
 
 /* footer */
 footer {
+    bottom: 0;
     background-color: #DCDCDC;
     height: 15%;
     text-align: center;
@@ -131,3 +135,43 @@ footer {
 .footerText {
     padding: 3%;
 }
+
+/* 800px Width*/
+@media (max-width: 800px) {
+    header {
+        align-items: center;
+        background-color: white;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 2%;
+    }
+    nav a {
+        width: 25vw;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 86vw;
+        margin: 0 12vw;
+    }
+    .textContainer {
+        align-items: center;
+        width: 80vw;
+    }
+    a {
+        white-space: nowrap;
+    }
+    .listOfProjects{
+        justify-content: space-evenly;
+    }
+    .listOfProjects div {
+        width: 40vw;
+    }
+} 
